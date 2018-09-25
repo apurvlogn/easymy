@@ -1,0 +1,69 @@
+
+
+
+
+
+$primarycolor:#E01A1A;
+$greyText:#707070;
+$darkText:#333333;
+
+
+
+body{
+   font-family: 'Open Sans',sans-serif;
+}
+
+.navheader {
+   width: 102%;
+    height: 80px;
+    box-shadow: #b9b9b9 1px -1px 6px 2px;
+    margin-top: -1%;
+    margin-left: -1%;
+    display: block;
+    margin-bottom: 25px;
+    .title{
+         height: 35px;
+        width: 200px;
+        padding: 34px 2px 3px 80px;
+        @media only screen and (max-width: 767px) and (min-width: 320px)
+        {
+            height: 35px;
+            width: 200px;
+            padding: 27px 2px 3px 27px;}
+    }
+    img{
+        width: 140px;
+    }
+   
+}
+.noboxshadow{
+    box-shadow: none;
+}
+
+    
+/**** media queries for few padding and gutters spaces requirement as per the design ***/ 
+
+
+   
+        .ui.doubling.grid 
+        {
+        @media only screen and (max-width: 991px) and (min-width: 768px)
+        {
+    width: auto!important;
+            }  
+        }
+        
+    .ui.grid>[class*="eight wide tablet"].column 
+        {
+            @media only screen and (max-width: 991px) and (min-width: 768px)
+        {
+    padding: 0px!important;
+}
+        }
+
+
+
+
+
+
+
