@@ -1,5 +1,7 @@
 # React Responsive Easymy Product Page
 
+This is a assignment project .
+
  It includes: 
 
 - [x] React 16.5.2
@@ -45,3 +47,5 @@ Make sure you have the latest Stable or LTS version of Node.js installed.
 
 Run `npm run production`. The production-ready code will be located under `dist` folder.
 
+
+PS :Kudos!! for the design specs ,they were very clear and self explainable .Thanks .
