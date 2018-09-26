@@ -1,0 +1,249 @@
+    
+
+    #productPage {
+        font-family: 'Open Sans', sans-serif;
+
+
+
+        .productInfo {
+
+            .ui.list {
+                padding-left: 26px;
+                width: 100%;
+
+                @media only screen and (max-width: 767px) and (min-width: 320px) {
+
+                    .item:last-child {
+                        padding-left: 26px;
+                        margin-left: -2em;
+                        border: 1px solid #B9B9B9;
+                        border-left: none;
+                        border-right: none;
+                    }
+                }
+            }
+
+            .list {
+                .wishshare {
+                    font-size: 14px;
+                    color: #707070;
+                    margin-right: 26px;
+
+                    .share {
+                        float: right;
+                    }
+
+                    img {
+                        height: 20px;
+                        width: 20px;
+                        margin: 8px;
+                    }
+                }
+
+                span.heading {
+                    font-size: 12px;
+                    color: #707070;
+                    padding-bottom: 13px;
+                    padding-top: 10px;
+                }
+
+                .value {
+                    font-size: 14px;
+                    color: #333333;
+                    padding-bottom: 12px;
+                }
+
+                .item.price {
+                    margin-top: 10px;
+
+                    .value {
+                        color: #e01b1a;
+                        font-size: 20px;
+                        padding-top: 4px;
+                        font-weight: 600;
+                    }
+                }
+
+                .seller {
+                    .value {
+                        padding-top: 3px;
+                        position: relative;
+
+                        img {
+                            width: 48px;
+                            height: 48px;
+                            margin-top: -4px;
+                        }
+
+                        .sellerName {
+                            font-size: 14px;
+
+                        }
+
+                        .sellerType {
+                            position: absolute;
+
+                            top: 22px;
+                            left: 51px;
+                            font-size: 12px;
+                            color: #707070;
+
+                        }
+                    }
+                }
+            }
+
+            .ui.button {
+                display: block;
+                padding: 7px;
+                font-size: 16px;
+                font-family: 'Open Sans', sans-serif;
+                text-align: left;
+                font-weight: 600;
+                margin: 0px 26px 10px 26px;
+                background: transparent;
+                border: 1px solid #E01A1A;
+                color: #E01A1A;
+
+                .svgIcon {
+                    width: 20px;
+                    float: left;
+                    background: transparent;
+                    margin-right: 12.5px;
+                    margin-top: 1px;
+
+                    .a {
+                        fill: none
+                    }
+
+                    .b {
+                        fill: #E01A1A
+                    }
+
+                }
+
+                &:hover {
+                    background: #E01A1A;
+                    color: white;
+
+                    .svgIcon {
+                        width: 20px;
+                        float: left;
+                        background: transparent;
+                        margin-right: 12.5px;
+
+                        .a {
+                            fill: none
+                        }
+
+                        .b {
+                            fill: #fff
+                        }
+
+                    }
+                }
+
+                @media only screen and (max-width: 767px) and (min-width: 320px) {
+                    margin: 0px 0px 0px 6px;
+                    box-sizing: content-box;
+                    line-height: 19px;
+                    text-align: left;
+                    display: flex;
+                    font-size: 14px;
+                    width: 27%;
+
+                }
+            }
+
+            .interestLabel {
+                font-size: 12px;
+                padding-bottom: 10px;
+                padding-left: 26px;
+            }
+
+            .rowTopBorder {
+                border-top: 2px solid #e2e2e2;
+            }
+
+            #footermobile {
+                position: fixed;
+                bottom: 0%;
+                padding: 12px 0px 12px 0px;
+                height: 61px;
+                box-shadow: 0px -3px 6px #d6d6d6;
+                background: white;
+
+
+            }
+
+
+            /**** media queries for few padding and gutters spaces requirement as per the design ***/
+
+
+
+            .ui.doubling.grid {
+                @media only screen and (max-width: 991px) and (min-width: 768px) {
+                    width: auto !important;
+                }
+            }
+
+            .ui.grid > [class*="eight wide tablet"].column {
+
+                padding: 0px !important;
+            }
+
+            @media only screen and (max-width: 767px) {
+                min-height: 27em;
+            }
+
+
+        }
+
+        /********** Product container CSS ***********/
+
+        .wide.column {
+
+            @media only screen and (max-width: 767px) and (min-width: 320px) {
+                width: 100% !important;
+                margin: 0 0 !important;
+                -webkit-box-shadow: none !important;
+                box-shadow: none !important;
+                padding: 0px !important;
+
+            }
+
+        }
+
+        .ui.large.header {
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+
+            @media only screen and (max-width: 767px) and (min-width: 320px) {
+                padding: 10px;
+            }
+        }
+        .breadcrumb{
+            .section {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            font-size: 11px;
+            color: #333333!important;
+            padding-left: -1px;
+
+            
+        }
+            .active{
+
+                text-decoration: underline;
+            }
+            
+        }
+        
+
+
+
+
+
+
+    }
