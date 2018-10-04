@@ -13,9 +13,9 @@ const style={
     darkText:'#333333',
 }
 
-const ProductInfo = () => (
+const ProductInfo = (props) => (
 
-    <Grid fluid stackable className='productInfo'>
+    <Grid fluid="true" stackable className='productInfo'>
       <Grid.Row>
         <List>
           <List.Item className='wishshare'>
@@ -24,23 +24,23 @@ const ProductInfo = () => (
           </List.Item>
           <List.Item className='price'>
             <span className="heading">Price</span>
-            <div className="value">RM1,289</div>
+            <div className="value">{props.productinfo.price}</div>
           </List.Item>
           <List.Item className='condition'>
             <span className="heading">Item Condition</span>
-            <div className="value">Brand new in the box</div>
+            <div className="value">{props.productinfo.condition}</div>
           </List.Item>
           <List.Item className='location'>
             <span className="heading">Item location</span>
-            <div className="value">Bangsar south, Kuala lumpur</div>
+            <div className="value">{props.productinfo.location}</div>
           </List.Item>
           <List.Item className='seller'>
             <span className="heading">Seller Info</span>
-            <div className="value"><Image src={sellermask} size='tiny' verticalAlign='top' circular/><span className='sellerName'>Takeshi Nakamura</span><span class="sellerType">Private Seller</span></div>
+            <div className="value"><Image src={sellermask} size='tiny' verticalAlign='top' circular/><span className='sellerName'>{props.productinfo.seller.name}</span><span className="sellerType">{props.productinfo.seller.type}</span></div>
           </List.Item>
         </List>
       </Grid.Row>
-  <ContactDetails/>
+  <ContactDetails contactinfo={props.productinfo.seller.contactDetails}/>
 </Grid>
 
 

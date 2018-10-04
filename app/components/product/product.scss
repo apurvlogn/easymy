@@ -149,8 +149,6 @@
                         width: 20px;
                         float: left;
                         background: transparent;
-                        margin-right: 12.5px;
-
                         .a {
                             fill: none
                         }
@@ -182,6 +180,8 @@
 
             .rowTopBorder {
                 border-top: 2px solid #e2e2e2;
+                padding-top: 1.5rem;
+    padding-bottom: 1.2rem;
             }
 
             #footermobile {
